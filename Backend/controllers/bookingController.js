@@ -64,7 +64,7 @@ const viewBook=async(req,res)=>{
     try{
         const user_id=req.params.user_id;
 const booking=await Booking.findOne({user_id:user_id});
-console.log("user_id")
+
 res.send(booking);
 
     }catch(err){
